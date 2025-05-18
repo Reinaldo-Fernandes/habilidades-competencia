@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Habilidades | Completo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="MOBILE.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        
+
+        <div class="header-left">
+      <div class="logo">
+        <div class="logo-symbol">⧉</div>
+        <div class="logo-text">
+          <span class="initials">RF</span>
+            <span class="full-name">Reinaldo Fernandes</span>
+        </div>
+         <h1>Dashboard de Habilidades & Conhecimentos</h1>
+      </div>
+
+       
+    </header>
+
+    <main>
+        <section id="input-area">
+            <h2 id="form-title">Registrar Nova Habilidade</h2>
+            <form id="skill-form">
+                <input type="hidden" id="editing-skill-index"> <div class="form-group">
+                    <label for="skill-name">Nome da Habilidade:</label>
+                    <input type="text" id="skill-name" required placeholder="Ex: JavaScript, Liderança">
+                    <span class="error-message" id="skill-name-error"></span> </div>
+
+                <div class="form-group">
+                    <label for="skill-category">Categoria:</label>
+                    <select id="skill-category" required>
+                        <option value="">Selecione a Categoria</option>
+                        <option value="tecnologia">Tecnologia</option>
+                        <option value="comportamental">Comportamental</option>
+                        <option value="idioma">Idioma</option>
+                        <option value="negocio">Negócio</option>
+                        <option value="arte-design">Arte/Design</option>
+                        <option value="ciencias">Ciências</option>
+                         <option value="outro">Outro</option>
+                    </select>
+                     <span class="error-message" id="skill-category-error"></span> </div>
+
+                <div class="form-group">
+                    <label for="skill-proficiency">Nível de Proficiência (1-5):</label>
+                    <input type="number" id="skill-proficiency" min="1" max="5" required placeholder="1=Iniciante, 5=Especialista">
+                     <span class="error-message" id="skill-proficiency-error"></span> </div>
+
+                <div class="form-group">
+                    <label for="skill-experience">Tempo de Experiência:</label>
+                    <input type="number" id="skill-experience" min="0" required placeholder="Ex: 2, 6 meses, 100 horas">
+                    <select id="skill-experience-unit" required>
+                        <option value="anos">Anos</option>
+                        <option value="meses">Meses</option>
+                        <option value="horas">Horas</option>
+                    </select>
+                     <span class="error-message" id="skill-experience-error"></span> </div>
+
+                <div class="form-group">
+                    <label for="skill-context">Contexto de Uso:</label>
+                     <select id="skill-context" required>
+                        <option value="">Selecione o Contexto</option>
+                        <option value="trabalho">Trabalho Atual/Anterior</option>
+                        <option value="estudo">Estudo Formal/Cursos</option>
+                        <option value="projeto-pessoal">Projeto Pessoal</option>
+                         <option value="comunidade">Comunariado</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                     <span class="error-message" id="skill-context-error"></span> </div>
+
+                <div class="form-group">
+                    <label for="skill-interest">Nível de Interesse (1-5):</label>
+                    <input type="number" id="skill-interest" min="1" max="5" required placeholder="1=Baixo, 5=Alto">
+                     <span class="error-message" id="skill-interest-error"></span> </div>
+                 <div class="form-buttons">
+                    <button type="submit" id="add-skill-btn">Adicionar Habilidade</button>
+                     <button type="button" id="cancel-edit-btn" class="hidden">Cancelar Edição</button> </div>
+            </form>
+        </section>
+
+        <section id="visualization-area">
+            <h2>Visualização dos Dados</h2>
+
+             <div class="filter-controls">
+                 <label for="filter-category">Filtrar por Categoria:</label>
+                 <select id="filter-category">
+                     <option value="all">Todas as Categorias</option>
+                     </select>
+             </div>
+
+            <div id="skills-list">
+                <h3>Habilidades Registradas</h3>
+                <ul>
+                    </ul>
+            </div>
+
+            <div id="charts-area">
+                 <h3>Gráficos de Análise</h3>
+                 <div class="chart-container">
+                    <canvas id="proficiency-chart"></canvas>
+                 </div>
+                 <div class="chart-container">
+                    <canvas id="interest-chart"></canvas>
+                 </div>
+                  <div class="chart-container">
+                    <canvas id="category-pie-chart"></canvas>
+                 </div>
+                  <div class="chart-container">
+                    <canvas id="category-radar-chart"></canvas>
+                 </div>
+            </div>
+        </section>
+
+        <section id="analysis-area">
+            <h2>Análise & Insights</h2>
+            <div id="strengths">
+                <h3>Pontos Fortes Identificados</h3>
+                <ul id="strengths-list">
+                    </ul>
+            </div>
+            <div id="weaknesses">
+                <h3>Oportunidades de Desenvolvimento</h3>
+                 <ul id="weaknesses-list">
+                    </ul>
+            </div>
+            <div id="recommendations">
+                <h3>Sugestões Personalizadas</h3>
+                 <ul id="recommendations-list">
+                    </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Dashboard de Habilidades</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

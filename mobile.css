@@ -1,0 +1,131 @@
+/* MOBILE.css - Estilos para dispositivos menores */
+
+/* IMPORTANTE: Este arquivo deve ser lincado DEPOIS do style.css no HTML */
+/* Ele contém as regras que SOBRESCREVEM as regras gerais para telas <= 767px */
+
+@media (max-width: 767px) {
+
+    header h1 {
+        font-size: 1.8rem;
+        padding: 0 10px;
+    }
+
+    main {
+        padding: 0 10px;
+        gap: 20px;
+        margin: 15px auto;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        /* Ajuste o espaço abaixo do H2 para mobile */
+        margin-bottom: 25px; /* Mantém um espaço menor em mobile */
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        margin-top: 15px;
+        margin-bottom: 8px;
+    }
+
+     #skill-form {
+         gap: 15px;
+     }
+     /* Agrupa botões em coluna em mobile */
+     #skill-form .form-buttons {
+         flex-direction: column;
+     }
+
+
+    #skills-list {
+        margin-top: 15px; /* Ajusta margem acima da lista em mobile */
+    }
+    /* Removido conjunto de regras vazio para #skills-list ul */
+    #skills-list li {
+        padding: 15px;
+        margin-bottom: 10px;
+        gap: 5px; /* Reduz espaço entre os detalhes e botões */
+        font-size: 0.9rem;
+        /* Muda a direção para row para botões ao lado em mobile */
+        flex-direction: row;
+        align-items: center; /* Centraliza verticalmente os itens do li */
+         justify-content: space-between; /* Espaça conteúdo e botões */
+    }
+
+     #skills-list li .skill-details {
+         flex-grow: 1;
+         gap: 2px; /* Menos espaço entre detalhes em mobile */
+     }
+
+     #skills-list li strong {
+        font-size: 1rem;
+     }
+     #skills-list li span {
+         display: block; /* Cada span em uma nova linha para melhor visualização */
+         font-size: 0.85rem;
+     }
+     #skills-list li .skill-actions {
+         gap: 8px; /* Espaço menor entre botões em mobile */
+     }
+
+
+    #charts-area {
+         /* Ajusta espaço acima da área de gráficos em mobile */
+         margin-top: 25px; /* Mantém um espaço menor em mobile */
+    }
+    /* H3 em charts-area em mobile */
+     #charts-area h3 {
+         /* Mantém width: 100%; que veio do style.css */
+         margin-bottom: 20px; /* Um pouco menos espaço abaixo do título em mobile */
+         /* Mantém other h3 styles */
+     }
+
+    .chart-container {
+        width: 100%;
+        max-width: none; /* Remove o limite de largura máxima */
+        padding: 20px;
+        box-shadow: var(--chart-container-shadow);
+        border: 1px solid var(--primary-accent); /* Borda um pouco mais fina */
+         height: 300px; /* Altura um pouco menor em mobile */
+    }
+
+    /* Remove efeito hover em mobile (touch devices) */
+    .chart-container:hover {
+         transform: none;
+         box-shadow: var(--chart-container-shadow);
+    }
+
+    /* Layout do filtro em coluna em mobile */
+    .filter-controls {
+         flex-direction: column;
+         align-items: flex-start;
+         gap: 10px;
+         padding: 15px;
+    }
+     /* Seletor de filtro ocupa largura total em mobile */
+     .filter-controls select {
+         width: 100%;
+         min-width: auto;
+     }
+
+
+    #analysis-area li {
+        padding: 15px;
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 20px 10px;
+        margin-top: 30px;
+    }
+
+    /* Ajustes para o scrollbar em navegadores que suportam (Webkit) - Opcional em mobile */
+    /* Geralmente scrollbars nativos são preferíveis em mobile */
+    /* Se quiser customizar, pode copiar do style.css */
+
+}
