@@ -1,25 +1,20 @@
-# SkillSphere - Gerenciador de Habilidades ✨
+SkillSphere - Gerenciador de Habilidades ✨
+Um projeto front-end interativo e analítico para você acompanhar e visualizar suas habilidades, proficiências e interesses. Com o SkillSphere, você pode adicionar, editar e remover habilidades, filtrá-las por categoria e obter insights valiosos através de visualizações gráficas dinâmicas e análises textuais.
 
-![Badge de Status do Projeto](https://img.shields.io/badge/status-em%20desenvolvimento-yellowgreen)
-![Badge de Licença](https://img.shields.io/badge/license-MIT-blue)
-
-Um projeto front-end para acompanhar e visualizar suas habilidades, proficiências e interesses de forma interativa e analítica. Com o SkillSphere, você pode adicionar, editar e remover habilidades, filtrá-las por categoria e obter insights através de visualizações gráficas e análises textuais.
-
-## Funcionalidades
-
-* **Adição e Edição de Habilidades:** Interface intuitiva para inserir detalhes de cada habilidade (nome, proficiência, interesse, categoria).
-* **Visualização em Lista:** Exibição clara das habilidades adicionadas em uma lista organizada.
-* **Filtros por Categoria:** Permite visualizar habilidades de categorias específicas.
-* **Visualizações Gráficas:** Apresenta dados de proficiência e interesse em diferentes tipos de gráficos (gráficos de barras, pizza, radar, etc.), utilizando Chart.js.
-* **Análise e Recomendações:** Oferece análises textuais simples sobre pontos fortes, pontos a desenvolver e recomendações com base nos dados inseridos.
-* **Tema Escuro:** Interface moderna e amigável com tema escuro.
-* **Design Responsivo:** Layout adaptável para diferentes tamanhos de tela (desktop, tablet, mobile).
-
-## Tecnologias Utilizadas
-
-* **HTML5:** Estrutura semântica da página.
-* **CSS3:** Estilização, layout (Flexbox, Grid), variáveis CSS e responsividade.
-* **JavaScript:** Lógica interativa para o formulário, manipulação da lista, filtragem e integração com bibliotecas de gráfico (presumido).
-* **Google Fonts:** Utilização das fontes 'Great Vibes' e 'Segoe UI'.
-* **Chart.js:** (Baseado na estrutura CSS) Biblioteca para criação de gráficos interativos.
-
+Funcionalidades
+Gestão Completa de Habilidades (CRUD): Adicione, edite e remova facilmente suas habilidades com detalhes como nome, proficiência, interesse, categoria, tempo de experiência e contexto de uso.
+Validação de Formulário: Feedback visual claro para garantir o preenchimento correto dos dados.
+Persistência de Dados: Suas habilidades são salvas automaticamente no navegador usando localStorage, garantindo que não se percam ao recarregar a página.
+Visualização em Lista Dinâmica: Exibição organizada das habilidades adicionadas, com destaque animado para novos itens.
+Filtros por Categoria: Organize e visualize rapidamente suas habilidades por categorias específicas.
+Visualizações Gráficas Avançadas: Utilize o Chart.js para entender melhor seus dados através de gráficos de barras (proficiência e interesse por habilidade), gráfico de pizza (distribuição por categoria) e gráfico de radar (proficiência e interesse médio por categoria).
+Análise e Recomendações Personalizadas: Obtenha insights textuais sobre seus pontos fortes, áreas de melhoria e sugestões de desenvolvimento baseadas em sua proficiência e interesse.
+Tema Escuro Moderno: Interface visualmente atraente e amigável, projetada com um tema escuro.
+Design Totalmente Responsivo: Desfrute de uma experiência de uso fluida em qualquer dispositivo, seja desktop, tablet ou mobile.
+Tecnologias Utilizadas
+HTML5: Estrutura semântica e acessível da aplicação.
+CSS3: Estilização moderna, variáveis CSS, layout flexível (Flexbox e Grid) e design responsivo com media queries.
+JavaScript (ES6+): Lógica interativa, manipulação do DOM, gestão de estado, persistência de dados e integração com bibliotecas externas.
+Chart.js: Biblioteca JavaScript para criação de gráficos interativos e personalizáveis.
+Font Awesome: Ícones vetoriais para ações (editar, excluir).
+Google Fonts: Utilização da fonte 'Segoe UI' para tipografia do projeto.
